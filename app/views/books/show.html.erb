@@ -1,9 +1,10 @@
-<div><%= flash[:notice] %></div>
 
 <h1></h1>
-
-<div><strong>Title:</strong><%= @book.title %></div>
-
-<div><strong>Body:</strong><%= @book.body %></div>
-
-<%= link_to "Edit", edit_book_path %> | <%= link_to "Back", books_path %>
+<div class="main-content">
+  <strong class="flash-massage"><%= flash[:notice] %></strong>
+  <div class ="show">
+    <div><strong>Title:</strong><p class="show-content"><%= @book.title %></p></div>
+    <div><strong>Body:</strong><p class="show-content"><%= @book.body %></p></div>
+  </div>
+  <%= link_to "Edit", edit_book_path %> | <%= link_to "Back", books_path %>
+</div>
