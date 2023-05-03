@@ -3,7 +3,7 @@
 <table>
   <thred>
     <tr>
-      <th>Title</th>
+      <th class=>Title</th>
       <th>Body</th>
       <!--<th></th>-->
       <!--<th></th>-->
@@ -36,9 +36,9 @@
 <% end %>
 
 <%= form_with model: @book, url: books_path, method: :post do |f| %>
-  <div>Title</div>
+  <div class="new">Title</div>
   <%= f.text_field :title %>
-  <div>Body</div>
+  <div class="new">Body</div>
   <%= f.text_area :body %>
 
   <div><%= f.submit 'Create Book' %></div>
